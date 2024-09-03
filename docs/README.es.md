@@ -27,6 +27,9 @@ Aquí hay algunas capturas de pantalla del frontend de **BIBLIOTECA**:
 ### Visualización de Detalles del Libro
 <img src="../public/screenshots/book_details_view.png" alt="Visualización de Detalles del Libro" width="500">
 
+### Editar Libro
+<img src="../public/screenshots/edit_view.png" alt="Editar Libro" width="500">
+
 
 ## Tecnologías Utilizadas
 
