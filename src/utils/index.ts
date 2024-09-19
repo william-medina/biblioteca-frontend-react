@@ -37,9 +37,14 @@ export function capitalizeFirstLetter(text: string): string {
 }
 
 export const parseLocation = (location: Book['location']) => {
+
+    if (!location || !location.includes('-')) {
+        return { shelf: '', section: '', position: NaN }; 
+    }
+
     const [shelf, sectionPosition] = location.split('-');
-    const section = sectionPosition.charAt(0);
-    const position = parseInt(sectionPosition.substring(1));
+    const section = sectionPosition?.charAt(0) || '';
+    const position = parseInt(sectionPosition?.substring(1)) || NaN;
 
     return { shelf, section, position };
 };
