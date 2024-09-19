@@ -86,7 +86,11 @@ export async function createBook(formData: FormData) {
 
 export async function updateBook(bookIsbn: number, formData: FormData) {
     try {
-        const { data } = await api.put<string>(`/books/${bookIsbn}`, formData);
+        // Agregar el campo _method a FormData
+        formData.append('_method', 'PUT'); // API Laravel
+
+        // Realizar la solicitud PUT
+        const { data } = await api.post<string>(`/books/${bookIsbn}`, formData);
         return data;
     } catch (error) {
         if(isAxiosError(error) && error.response) {
