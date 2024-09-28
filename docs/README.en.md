@@ -48,6 +48,13 @@ Here are some screenshots of the **BIBLIOTECA** frontend:
 
 The **BIBLIOTECA** frontend relies on an external API for fetching data and handling user interactions. The API is essential for the proper functioning of the application.
 
+### API Repository
+
+The API for the **BIBLIOTECA** is located in a separate repository. You can find it here:
+
+- [Flags Quiz API Repository (Express)](https://github.com/william-medina/biblioteca-backend-express) - This repository contains the Express API.
+- [Flags Quiz API Repository (Laravel)](https://github.com/william-medina/biblioteca-backend-laravel) - This repository contains the Laravel API.
+
 ### API Configuration
 
 The frontend application communicates with the backend API through an environment variable. Ensure the base URL of the API is correctly set to include the `/api` path.

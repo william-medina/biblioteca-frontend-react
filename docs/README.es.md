@@ -48,6 +48,13 @@ Aquí hay algunas capturas de pantalla del frontend de **BIBLIOTECA**:
 
 El frontend de **BIBLIOTECA** depende de una API externa para obtener datos y manejar las interacciones del usuario. La API es esencial para el correcto funcionamiento de la aplicación.
 
+### Repositorio de la API
+
+La API para la **BIBLIOTECA** se encuentra en un repositorio separado. Puedes encontrarla aquí:
+
+- [Repositorio de la API de Biblioteca (Express)](https://github.com/william-medina/biblioteca-backend-express) - Este repositorio contiene la API de Express.
+- [Repositorio de la API de Biblioteca (Laravel)](https://github.com/william-medina/biblioteca-backend-laravel) - Este repositorio contiene la API de Laravel.
+
 ### Configuración de la API
 
 La aplicación frontend se comunica con la API del backend a través de una variable de entorno. Asegúrate de que la URL base de la API esté configurada correctamente para incluir la ruta `/api`.
