@@ -87,9 +87,9 @@ export async function createBook(formData: FormData) {
 export async function updateBook(bookIsbn: number, formData: FormData) {
     try {
 
-        // EXPRESS
+        // EXPRESS - SPRING
         const { data } = await api.put<string>(`/books/${bookIsbn}`, formData);
-        // END EXPRESS
+        // END EXPRESS - SPRING
   
         // LARAVEL
         //formData.append('_method', 'PUT');

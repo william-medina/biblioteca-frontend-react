@@ -19,7 +19,7 @@ function BookFormComponent({book, mode }: BookFormProps) {
     const [isImageErrors, setIsImageErrors] = useState<number[]>([]);
     const [isImageLoading, setIsImageLoading] = useState<number[]>([]);
     const [selectedFileName, setSelectedFileName] = useState<string | null>(null);
-    const [loginErrorMessage, setLoginErrorMessage] = useState<string | null>(null);
+    const [bookErrorMessage, setBookErrorMessage] = useState<string | null>(null);
 
     const timestamp = useMemo(() => new Date().getTime(), []);
     const navigate = useNavigate();
@@ -51,12 +51,13 @@ function BookFormComponent({book, mode }: BookFormProps) {
     const mutation = useMutation({
         mutationFn: mode === 'create' ? createBook : (data: FormData) => updateBook(book?.isbn!, data),
         onError: (error) => {
-            setLoginErrorMessage(error.message);
+            setBookErrorMessage(error.message);
         },
         onSuccess: () => {
             if(mode === 'create') {
                 showSuccessAlert('Libro Agregado');
                 reset();
+                setBookErrorMessage(null);
                 setSelectedFileName(null);
             } else {
                 showSuccessAlert('Libro Actualizado');
@@ -72,7 +73,7 @@ function BookFormComponent({book, mode }: BookFormProps) {
     const deleteMutation = useMutation({
         mutationFn: (bookIsbn: number) => deleteBook(bookIsbn),
         onError: (error) => {
-            setLoginErrorMessage(error.message);
+            setBookErrorMessage(error.message);
         },
         onSuccess: () => {
             showSuccessAlert('Libro Eliminado');
@@ -154,8 +155,8 @@ function BookFormComponent({book, mode }: BookFormProps) {
                 onSubmit={handleSubmit(handleSubmitForm)}
                 noValidate
             >
-                {loginErrorMessage && (
-                    <ErrorMessage>{loginErrorMessage}</ErrorMessage>
+                {bookErrorMessage && (
+                    <ErrorMessage>{bookErrorMessage}</ErrorMessage>
                 )}
                 <div>
                     <label className="text-n1 text-lg mobile-s:text-xl sm:text-2xl font-bold" htmlFor="title">Título</label>
