@@ -4,7 +4,7 @@
 ![Language](https://img.shields.io/badge/Language-TypeScript-blue)
 ![Build](https://img.shields.io/badge/Build-Vite-f36f6f)
 ![CSS](https://img.shields.io/badge/CSS-Tailwind%20CSS-blue)
-![API](https://img.shields.io/badge/External%20API-Express%20%26%20Laravel-orange)
+![API](https://img.shields.io/badge/External%20API-Express%20%26%20Laravel%20%26%20Spring%20Boot-orange)
 
 ## Descripción
 
