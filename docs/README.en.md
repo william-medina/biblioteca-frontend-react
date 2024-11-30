@@ -58,8 +58,9 @@ The **BIBLIOTECA** frontend relies on an external API for fetching data and hand
 
 The API for the **BIBLIOTECA** is located in a separate repository. You can find it here:
 
-- [Flags Quiz API Repository (Express)](https://github.com/william-medina/biblioteca-backend-express) - This repository contains the Express API.
-- [Flags Quiz API Repository (Laravel)](https://github.com/william-medina/biblioteca-backend-laravel) - This repository contains the Laravel API.
+- [Biblioteca API Repository (Express)](https://github.com/william-medina/biblioteca-backend-express) - This repository contains the Express API.
+- [Biblioteca API Repository (Laravel)](https://github.com/william-medina/biblioteca-backend-laravel) - This repository contains the Laravel API.
+- [Biblioteca API Repository (Spring Boot)](https://github.com/william-medina/biblioteca-backend-springboot) - This repository contains the Spring Boot API.
 
 ### API Configuration
 

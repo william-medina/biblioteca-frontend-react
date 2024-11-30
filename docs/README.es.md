@@ -60,6 +60,7 @@ La API para la **BIBLIOTECA** se encuentra en un repositorio separado. Puedes en
 
 - [Repositorio de la API de Biblioteca (Express)](https://github.com/william-medina/biblioteca-backend-express) - Este repositorio contiene la API de Express.
 - [Repositorio de la API de Biblioteca (Laravel)](https://github.com/william-medina/biblioteca-backend-laravel) - Este repositorio contiene la API de Laravel.
+- [Repositorio de la API de Biblioteca (Spring Boot)](https://github.com/william-medina/biblioteca-backend-springboot) - Este repositorio contiene la API de Spring Boot.
 
 ### Configuración de la API
 
