@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /login
+Disallow: /book/create
+Disallow: /book/:isbn/edit
+Disallow: /location
+Disallow: /search/:keyword
+
+# Sitemap: https://biblioteca.william-medina.com/sitemap.xml
