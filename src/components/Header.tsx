@@ -47,6 +47,8 @@ function Header() {
                         className="p-2.5 hover:invert transition duration-300"
                         src="/icons/search.svg"
                         alt="Icono Buscar"
+                        width={40}
+                        height={40}
                     />
                 </Link>
             </form>
@@ -60,7 +62,7 @@ function Header() {
                 <button
                     className="text-n1 text-2xl lg:hidden flex items-center invert w-7 h-7 group-hover:invert-0 duration-300 select-none"
                 >
-                    <img src="/icons/menu.svg" alt="Menu"/>
+                    <img src="/icons/menu.svg" alt="Menu" width={28} height={28} />
                 </button>
                 {isNavOpen && (
                     <nav className="absolute top-[4rem] m500:top-[4.8rem] right-0 bg-n1 text-black w-screen m500:w-48 lg:hidden select-none">

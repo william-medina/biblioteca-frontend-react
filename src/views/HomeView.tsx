@@ -26,6 +26,7 @@ function HomeView() {
     } = useQuery({
         queryKey: ['randomBooks'],
         queryFn: () => getRandomBooks(5),
+        refetchOnWindowFocus: false,
     });
     
     useEffect(() => {
@@ -83,6 +84,8 @@ function HomeView() {
                                         setIsImageErrors(prev => [...prev, book.isbn]);
                                         setIsImageLoading(prev => prev.filter(isbn => isbn !== book.isbn));
                                     }}
+                                    width={13}
+                                    height={16}
                                 />
                             )}
                         </Link>
