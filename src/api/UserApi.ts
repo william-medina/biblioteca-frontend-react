@@ -9,7 +9,7 @@ export async function login(formData: LoginForm) {
         return data;
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -23,7 +23,7 @@ export async function getUser() {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw Error(error.response.data.error);
+            throw Error(error.response.data.message);
         }
     }
 }

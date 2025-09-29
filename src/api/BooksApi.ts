@@ -11,7 +11,7 @@ export async function getBookCount() {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -25,7 +25,7 @@ export async function getRandomBooks(count: number) {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -39,7 +39,7 @@ export async function getAllBooks(sortBy: string) {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -53,7 +53,7 @@ export async function getBooksByKeyword(keyword: string) {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -67,7 +67,7 @@ export async function getBookByISBN(isbn: Book['isbn']) {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -79,7 +79,7 @@ export async function createBook(formData: FormData) {
         return data;
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -99,7 +99,7 @@ export async function updateBook(bookIsbn: number, formData: FormData) {
         return data;
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -110,7 +110,7 @@ export async function deleteBook(bookIsbn: number) {
         return data;
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
@@ -124,7 +124,7 @@ export async function getLocationBooks() {
         }
     } catch (error) {
         if(isAxiosError(error) && error.response) {
-            throw new Error(error.response.data.error);
+            throw new Error(error.response.data.message);
         }
     }
 }
